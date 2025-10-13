@@ -1,5 +1,5 @@
 ---
-title: 'how to avoid legacy hell and keep things maintainable (for rustaceans)'
+title: 'how to avoid legacy hell and build maintainable systems'
 published: 2025-10-04
 draft: true
 toc: false
@@ -32,10 +32,27 @@ The key word here is _*productively*_. Maintainability is simply the quality of 
 - Management (and/or stakeholders), as more productivity means faster execution means [more money](https://en.meming.world/wiki/Stonks)
 
 But maintainability comes at a cost.
-Sometimes, you can't afford to take the 20% more time required to make things cleaner simply because engineering is just a small cog in the huge machines that big (or small) companies are. Sometimes, you have to go fast, write shit code and ship a hotfix at 6 AM after a night of trying to get the service back on its feet.
+Sometimes, you can't afford to take the 20% more time required to make things cleaner simply because engineering is just a small cog in the huge machines that big (or small) companies are.
 
-But today, we will try to explore ways to make our codebases more maitainable by exploiting the features that Rust offers us, as well as a few cool tools and quite a bit of ingenuity.
+Sometimes, you have to go fast, write shit code and ship a hotfix at 6am after a night of debugging. Luckily for you, that's not what we are doing today.
 
 Ready? Let's dive in.
 
-# 
+# Navigation: the art of finding things effectively
+
+When we talk about coding, we don't think about how we *use* the code. We often only discuss how to *write* it. And that's a big problem.
+
+And when I say use, I don't mean someone else using your lib. I mean using the code itself, jumping from definitions to definitions, reading the body of a function you want to use and doesn't have comments, searching for that one file where you remember seeing the struct you need, etc.
+
+Concurrently, this is the thing we spend the most time on in a software project. Before making any changes or estimates, you research, you evaluate the current state of things or you investigate the origin of a bug. So shouldn't it be a priority to optimize for that?
+
+Again, maintainability is defined as the capacity of a system to let its maintainers work on it productively.
+
+But how do we make a codebase more easily navigatable?
+
+## Locality
+
+> The primary feature for easy maintenance is locality: Locality is that characteristic of source code that enables a programmer to understand that source by looking at only a small portion of it. 
+> [Richard Gabriel](https://www.dreamsongs.com/Files/PatternsOfSoftware.pdf)
+
+
