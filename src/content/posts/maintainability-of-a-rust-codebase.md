@@ -1,7 +1,7 @@
 ---
 title: 'Maintainability for rustaceans'
 published: 2025-10-04
-draft: false
+draft: true
 toc: false
 tags: ['rust']
 ---
