@@ -1,5 +1,5 @@
 ---
-title: 'PCIe SATA and the ASM1166 nightmare'
+title: 'PCIe SATA expansion and the ASM1166 nightmare'
 published: 2025-11-10
 draft: false
 toc: false
@@ -24,7 +24,7 @@ truenas_admin@truenas[~]$ lspci -nn | grep -i sata
 
 As you can see, the second entry lists `ASMedia Technology Inc. ASM1166 Serial ATA Controller`.
 
-If this is the case for you and you are experiencing compatibility and disconnect issues with ASM1166 on Linux (e.g., TrueNAS, Unraid, etc.), go to [this section](http://localhost:4321/posts/sata-expansion-nightmare-asm1166#how-to-fix) and follow the instructions.
+If this is the case for you and you are experiencing compatibility and disconnect issues with ASM1166 on Linux (e.g., TrueNAS, Unraid, etc.), go to [this section](#how-to-fix) and follow the instructions.
 
 ## Foreword
 
