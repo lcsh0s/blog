@@ -134,12 +134,12 @@ const config: SiteConfig = {
 			// Make the GitHub dark theme a little cuter
 			'catppuccin-mocha': {
 				accent: '#cdd6f4',
-				heading1: '#cdd6f4',
-				heading2: '#cdd6f4',
-				heading3: '#cdd6f4',
-				heading4: '#cdd6f4',
-				heading5: '#cdd6f4',
-				heading6: '#cdd6f4',
+				// heading1: '#cdd6f4',
+				// heading2: '#cdd6f4',
+				// heading3: '#cdd6f4',
+				// heading4: '#cdd6f4',
+				// heading5: '#cdd6f4',
+				// heading6: '#cdd6f4',
 				separator: '#eff1f5',
 				link: 'blue',
 			},
