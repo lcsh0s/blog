@@ -11,7 +11,7 @@ const config: SiteConfig = {
 	// The author of the site, used in the footer, SEO, and RSS feed.
 	author: 'Lucas de Castro',
 	// Keywords for SEO, used in the meta tags.
-	tags: ['code', 'software', 'enigneer', 'lcsh0s'],
+	tags: ['code', 'software', 'enigneer', 'ae2rs'],
 	// Path to the image used for generating social media previews.
 	// Needs to be a square JPEG file due to limitations of the social card generator.
 	// Try https://squoosh.app/ to easily convert images to JPEG.
@@ -38,7 +38,7 @@ const config: SiteConfig = {
 		},
 		{
 			name: 'GitHub',
-			url: 'https://github.com/lcsh0s',
+			url: 'https://github.com/ae2rs',
 			external: true,
 		},
 	],
@@ -147,7 +147,7 @@ const config: SiteConfig = {
 	},
 	// Social links to display in the footer.
 	socialLinks: {
-		github: 'https://github.com/lcsh0s',
+		github: 'https://github.com/ae2rs',
 		email: 'lucas@decastro.one',
 		linkedin: 'https://www.linkedin.com/in/lucas-de-castro-swe/',
 		rss: true,
